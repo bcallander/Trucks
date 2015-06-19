@@ -1,0 +1,1117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>
+   Spot Bids
+  </title>
+  <link href="../../ig_res/Default/ig_shared.css" rel="stylesheet" type="text/css"/>
+  <link href="../../ig_res/Default/ig_texteditor.css" rel="stylesheet" type="text/css"/>
+  <link href="../../ig_res/Default/ig_dialogwindow.css" rel="stylesheet" type="text/css"/>
+  <link href="../../ig_res/Default/ig_monthcalendar.css" rel="stylesheet" type="text/css"/>
+  <script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.10.2.min.js" type="text/javascript">
+  </script>
+  <script src="../../scripts/jquery-ui/1.10.3/jquery-ui.min.js">
+  </script>
+  <script type="text/javascript">
+   if (!window.jQuery) {
+                document.write(unescape("%3Cscript src='../../scripts/jquery/1.10.2/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
+            }
+
+            $(document).ready(function () {
+                if (!$("#btnSubmitOffer").prop("disabled")) {
+                    ProcessAcknowledgements();
+                    $("div.Acknowledgement input[type='checkbox']").click(ProcessAcknowledgements);
+                }
+
+                $("#btnSubmitOffer").click(function() {
+                    showProgressModal();
+                });
+
+            });
+
+            function ProcessAcknowledgements() {
+                var isAnyUnchecked = false;
+                $("div.Acknowledgement input[type='checkbox']").each(function (index, chkbox) {
+                    if (chkbox.checked)
+                        $(chkbox).parents("div.Acknowledgement").css("background-color", "#008000");
+                    else {
+                        $(chkbox).parents("div.Acknowledgement").css("background-color", "#FF0000");
+                        isAnyUnchecked = true;
+                    }
+                });
+
+                if (isAnyUnchecked)
+                    $("#btnSubmitOffer").prop("disabled", true);
+                else
+                    $("#btnSubmitOffer").prop("disabled", false);
+            }
+
+            function showProgressModal() {
+                var modalContainer = $("#divProcessing");
+
+                modalContainer.dialog({
+                    closeOnEscape: false,
+                    modal: true,
+                    position: { my: "center", at: "center", of: window },
+                    resizable: false,
+                    minWidth: 0,
+                    minHeight: 0,
+                    height: "auto",
+                    width: "auto"
+                });
+
+                modalContainer.parents(".ui-dialog:first").find(".ui-dialog-titlebar").hide();
+                
+            }
+
+            function hideProgressModal() {
+                $("#divProcessing").dialog("close");
+            }
+  </script>
+  <link href="../../styles/jquery-ui/1.9.2/overcast/jquery-ui.css" rel="stylesheet"/>
+  <link href="../../styles/jquery-ui/1.9.2/overcast/jquery.ui.dialog.css" rel="stylesheet"/>
+  <script language="javascript" type="text/javascript">
+   function displayNotes(notes) {
+            var txtnotesbox = $("#wdwNotes_tmpl_txtNotes");
+            txtnotesbox.text(notes);
+            txtnotesbox.attr('readonly', true);
+            var dialogWindow = this.parent.$find("wdwNotes");
+            dialogWindow.show();
+        }
+  </script>
+  <style type="text/css">
+   .InputField {
+            width: 100px;
+            margin-right: 16px;
+            text-align: left;
+        }
+
+            .DateInputField { width: 100px; }
+
+        div.Acknowledgement {
+            width: 300px; 
+            text-align: left; 
+            vertical-align: middle;
+            font-weight: bold;
+        }
+
+        div.Acknowledgement input[type="checkbox"] {
+            height: 10px;
+        }
+        
+        div.acknowledgementHelpText {
+            width: 300px;
+            height: auto;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .processingModal {
+            display: none;
+            z-index: 99;
+            position: absolute;
+        }
+        
+        .ui-widget-overlay {
+            position: fixed;        
+        }
+  </style>
+  <link href="../../App_Themes/NewLook/NewLook.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body class="BodyNoMargin">
+  <div class="processingModal" id="divProcessing">
+   Processing...
+   <img alt="" id="imgProcessing" src="../../images/loadingSpinner.gif"/>
+  </div>
+  <form action="SpotBidDetail.aspx?LoadNumber=9zV764BbndwUDk2VD43bLA%3d%3d&amp;CarrierID=lq7iyu9OpWpG6Cd3rq1OqQ%3d%3d" id="form1" method="post" name="form1">
+   <div>
+    <input id="__EVENTTARGET" name="__EVENTTARGET" type="hidden" value=""/>
+    <input id="__EVENTARGUMENT" name="__EVENTARGUMENT" type="hidden" value=""/>
+    <input id="__VIEWSTATEFIELDCOUNT" name="__VIEWSTATEFIELDCOUNT" type="hidden" value="2"/>
+    <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="/wEPDwUJLTc2NTAxNjUwD2QWBAIDDxYCHgRUZXh0BQ1Qcm9jZXNzaW5nLi4uZAIFD2QWBAIFD2QWAgIBD2QWLmYPZBYCZg9kFgICAQ8PFgIfAAUJU3BvdCBCaWRzZGQCAQ9kFgRmD2QWAgIBDw8WAh8ABQtMb2FkIE51bWJlcmRkAgEPZBYCAgEPDxYCHwAFCCoqKio4ODM3ZGQCAg9kFgRmD2QWAgIBDw8WAh8ABQ9DYXJyaWVyIENvbnRhY3RkZAIBD2QWAgIBDw8WAh8ABQtCcm9va2UgUGVubmRkAgMPZBYEZg9kFgICAQ8PFgIfAAUGQnJhbmNoZGQCAQ9kFgICAQ8PFgIfAAUbVE1DIEpvaG5zb24gQ29udHJvbHMgLSAwNTkwZGQCBA9kFgRmD2QWAgIBDw8WAh8ABQVQaG9uZWRkAgEPZBYCAgEPDxYCHwAFDDgwMC05NjctOTYxOWRkAgUPZBYEZg9kFgICAQ8PFgIfAAUIQ3VzdG9tZXJkZAIBD2QWAgIBDw8WAh8ABRhKQ0kgU0FQIC0gQ29tbW9uIENhcnJpZXJkZAIGD2QWBGYPZBYCAgEPDxYCHwAFEEFkZGl0aW9uYWwgTm90ZXNkZAIBD2QWAgIBDxYCHwBlZAIHD2QWBGYPZBYCAgEPDxYCHwAFB0hheiBNYXRkZAIBD2QWBAIBDw8WAh8ABQJOb2RkAgMPFgQfAAVyKiogTE9BRCBDT05UQUlOUyBIQVpBUkRPVVMgTUFURVJJQUxTKio8YnIgLz5EbyBub3QgbWFrZSBvZmZlciB1bmxlc3MgeW91IGFyZSBlbGlnaWJsZSB0byB0cmFuc3BvcnQgaGF6YXJkb3VzIGxvYWRzHgdWaXNpYmxlaGQCCA9kFgRmD2QWAgIBDw8WAh8ABRdDdXN0b21lciBFZmZlY3RpdmUgRGF0ZWRkAgEPZBYCAgEPDxYCHwBlZGQCCQ9kFgRmD2QWAgIBDw8WAh8ABRhDdXN0b21lciBFeHBpcmF0aW9uIERhdGVkZAIBD2QWAgIBDw8WAh8AZWRkAgoPZBYEZg9kFgICAQ8PFgIfAAUKRGlzY2xhaW1lcmRkAgEPZBYCAgEPDxYCHwAF+QFTdWJtaXR0aW5nIGEgcmF0ZSBkb2VzIG5vdCBndWFyYW50ZWUgYXdhcmQgb2YgdGhlIGxvYWQuIEVhY2ggc3VibWlzc2lvbiBpcyByZXZpZXdlZC4gWW91IHdpbGwgcmVjZWl2ZSBub3RpZmljYXRpb24gYWZ0ZXIgdGhlIHJldmlldy4gTG9hZCB0ZW5kZXIgZm9yIHRoZSBzaGlwbWVudCB3aXRoIHN1Ym1pdHRlZCByYXRlIDxCPk9SPC9CPiBFbWFpbCBub3RpZnlpbmcgeW91IHRoYXQgdGhlIHN1Ym1pdHRlZCByYXRlIHdhcyByZWplY3RlZC5kZAILD2QWAmYPZBYCAgEPDxYEHwAFH0FkZGl0aW9uYWwgU2hpcG1lbnQgSW5mb3JtYXRpb24fAWhkZAIMD2QWAmYPZBYCAgEPZBYCZg9kFgJmD2QWEmYPZBYCZg8PFgIfAAUDUC9EZGQCAQ9kFgJmDw8WAh8ABQRDaXR5ZGQCAg9kFgJmDw8WAh8ABQ1TdGF0ZS9Db3VudHJ5ZGQCAw9kFgJmDw8WAh8ABQREYXRlZGQCBA9kFgJmDw8WAh8ABQVIb3Vyc2RkAgUPZBYCZg8PFgIfAAUMV2VpZ2h0KGxicy4pZGQCBg9kFgJmDw8WAh8ABQdQcm9kdWN0ZGQCBw9kFgJmDw8WAh8ABQRXb3JrZGQCCA9kFgJmDw8WAh8ABQVOb3Rlc2RkAg0PZBYCZg9kFgICAQ8PFgIfAAVMVGhlIG1pbGVhZ2UgcmVwcmVzZW50ZWQgaGVyZSBtYXkgZGlmZmVyIGZyb20gb3RoZXIgc2ltaWxhciBtaWxlYWdlIHByb2dyYW1zLmRkAg8PZBYCAgEPZBYiAgEPDxYCHwAFEUxvYWQgUmVxdWlyZW1lbnRzZGQCAw8PFgIfAAUORXF1aXBtZW50IFR5cGVkZAIFDw8WAh8ABQNWYW5kZAIHDw8WAh8ABQxXZWlnaHQobGJzLilkZAIJDw8WAh8ABQg0NCw0OTguMWRkAgsPDxYCHwAFDVRlYW0gUmVxdWlyZWRkZAINDw8WAh8ABQJOb2RkAg8PEA8WAh8ABRlBY2tub3dsZWRnZSBUZWFtIFJlcXVpcmVkZGRkZAIRDw8WAh8ABRNXZWlnaHQgVGl4IFJlcXVpcmVkZGQCEw8PFgIfAAUCTm9kZAIVDxAPFgIfAAUWQWNrbm93bGVkZ2UgV2VpZ2h0IFRpeGRkZGQCFw8PFgIfAAUVRHJvcCBUcmFpbGVyIFJlcXVpcmVkZGQCGQ8PFgIfAAUCTm9kZAIbDxAPFgIfAAUYQWNrbm93bGVkZ2UgRHJvcCBUcmFpbGVyZGRkZAIdDw8WAh8ABQdIYXogTWF0ZGQCHw8PFgIfAAUCTm9kZAIhDxAPFgIfAAUTQWNrbm93bGVkZ2UgSGF6LW1hdGRkZGQCEA9kFgRmD2QWAgIBDxAPFgYfAAUYT2ZmZXIgTXkgQ29udHJhY3RlZCBSYXRlHgdDaGVja2VkaB4HRW5hYmxlZGgWAh4Hb25jbGljawULQWRkVG90YWwoKTtkZGQCAQ9kFgICAQ8PFgIfAWhkFgICAQ8WAh8BaGQCEQ9kFgRmD2QWAgIBDxAPFgIfAAUPT2ZmZXIgU3BvdCBSYXRlFgIfBAULQWRkVG90YWwoKTtkZGQCAQ9kFgICAQ9kFgwCAQ9kFgICAQ8WAh8ABdABPHRyIGNsYXNzPUhlYWRlcj48dGQgd2lkdGg9MTg1PiZuYnNwO0NvZGUvRGVzY3JpcHRpb248L3RkPjx0ZCB3aWR0aD04MD4mbmJzcDtUeXBlPC90ZD48dGQgd2lkdGg9ODA+Jm5ic3A7VW5pdHM8L3RkPjx0ZCB3aWR0aD04MD4mbmJzcDtQZXIgVW5pdCAoVVNEICAgICAgICk8L3RkPjx0ZCB3aWR0aD04MD4mbmJzcDtDb3N0IChVU0QgICAgICAgKTwvdGQ+PC90cj4NCmQCAw9kFgICAQ8QZA8WAWYWARAFDzQwMCAtIExpbmUgSGF1bAUDNDAwZ2RkAgUPZBYCAgEPDxYCHwAFAUZkZAIHD2QWAgIBDw8WAh8ABQQxLjAwZGQCCQ9kFgICAQ8PFgIeAUUFCTQxNTAuMDAwMBYCHgZvbmJsdXIFC0FkZFRvdGFsKCk7ZAILD2QWAgIBDw8WAh8ABQg0LDE1MC4wMGRkAhIPZBYCZg9kFgICAQ8PFgQfAAUnVmlldy9VcGxvYWQgQXR0YWNobWVudHMgKDAgQXR0YWNobWVudHMpHg1PbkNsaWVudENsaWNrBYEBamF2YXNjcmlwdDogRGlzcGxheVBvcHVwKCI5elY3NjRCYm5kd1VEazJWRDQzYkxBPT0iLCAibHE3aXl1OU9wV3BHNkNkM3JxMU9xUT09IiwgIlNwb3RCaWRBdHRhY2htZW50cy5hc3B4IiwgIjUyNSIpOyByZXR1cm4gZmFsc2U7ZGQCEw9kFgJmD2QWEAIBDxYCHwFoFgRmD2QWAmYPDxYCHwAFB1F1b3RlICNkZAIBD2QWAmYPDxYCHwBlZGQCAw9kFgRmD2QWAmYPDxYCHwAFD09mZmVyIEVmZmVjdGl2ZWRkAgEPZBYCZg8PFgIfBQURMjAxNS02LTExLTAtMC0wLTBkZAIFD2QWBGYPZBYCZg8PFgIfAAUNT2ZmZXIgRXhwaXJlc2RkAgEPZBYCZg8PFgIfBQURMjAxNS02LTExLTAtMC0wLTBkZAIHDxYCHwFoFgJmD2QWAmYPDxYCHwAFFSMgb2YgVHJ1Y2tzIFJlcXVlc3RlZGRkAgkPFgIfAWgWBGYPZBYCZg8PFgIfAAUVIyBvZiBUcnVja3MgQ29tbWl0dGVkZGQCAQ9kFgJmDxQrAAUPFgIfBQUBMGRkFCsAAhYCHgtjbGllbnRTdGF0ZRQrAAFkZGRkZAILDw8WAh8ABQ1HcmFuZCBUb3RhbDogZGQCDQ8PFgIfAAUKVVNEICAgICAgIGRkAg8PDxYCHwUFCzQxNTAuMDAwMDAwZGQCFA9kFgJmD2QWAgIBDw8WAh8BaGQWAgIBDxYCHwAFhgFUbyBlbmFibGUgdGhlICJNYWtlIE9mZmVyIiBidXR0b24sIHZlcmlmeSB0aGF0IHlvdSBoYXZlIHNlbGVjdGVkIGFsbCBvZiB0aGUgYWNrbm93bGVkZ2VtZW50IGNoZWNrYm94ZXMgYWJvdmUgaW4gdGhlIGxvYWQgcmVxdWlyZW1lbnRzLmQCFg9kFgJmD2QWBAIBDw8WAh8ABQpNYWtlIE9mZmVyZGQCAw8PFgQfAAUFQ2xvc2UfBwUPd2luZG93LmNsb3NlKCk7ZGQCFw9kFgJmD2QWAgIBDw8WAh8ABRVEZWxldGUgUHJldmlvdXMgT2ZmZXJkZAIYD2QWAmYPZBYGAgEPDxYCHwAFI1BsZWFzZSBzdWJtaXQgbGluZSBoYXVsIHByaWNlIG9ubHkuZGQCAw8PFgIfAAVeQWxsIGFjY2Vzc29yaWFsIGluY2x1ZGluZyBmdWVsIHdpbGwgYmUgcGFpZCBhY2NvcmRpbmcgdG8gdGhlIGNvbnRyYWN0ZWQgYWNjZXNzb3JpYWwgYWdyZWVtZW50LmRkAgUPDxYCHwAFlgFCeSBzdWJtaXR0aW5nIHRoaXMgb2ZmZXIsIHlvdSBhcmUgd2lsbGluZyB0byBoYXVsIHRoaXMgbG9hZCBhdCB0aGUgc3VibWl0dGVkIHJhdGUuIFRoaXMgb2ZmZXIgZG9lcyBub3QgZ3VhcmFudGVlIHRoYXQgeW91IHdpbGwgYmUgYm9va2VkIG9uIHRoaXMgbG9hZC5kZAIHD2QWBGYPFCsAAmRkZAIBDxQr"/>
+    <input id="__VIEWSTATE1" name="__VIEWSTATE1" type="hidden" value="AAJkZGQYAgUOX2lnX2RlZl9kcF9jYWwPFCsAAgYAAAAAAAAAAAYASIiaGnLSiGQFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYHBQpyYlNwb3RSYXRlBRB1c2VyQ2hhcmdlQW1vdW50BRVmbGRPZmZlckVmZmVjdGl2ZURhdGUFFmZsZE9mZmVyRXhwaXJhdGlvbkRhdGUFCkdyYW5kVG90YWwFCHdkd05vdGVzBQ5faWdfZGVmX2RwX2NhbG1qvD9Ap0AERStfQ+V3wxCGKAx4"/>
+   </div>
+   <script type="text/javascript">
+    //<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+   </script>
+   <script src="/WebResource.axd?d=3zjFxUB9PlqLzON3YiZ4W8lx7ii3KLwiiSNSyGQn8zcVw2bCUthUv_qojxfGWXNh4Sx5g8DQJKNzEiZF2CPf9EV-1JE1&amp;t=635589219571259667" type="text/javascript">
+   </script>
+   <script type="text/javascript">
+    //<![CDATA[
+var userChargeParams = new Object(); userChargeParams.totalReadonlyCosts = 4150.000000; userChargeParams.NumberGroupSeparator = ','; userChargeParams.NumberDecimalSeparator = '.';//]]>
+   </script>
+   <script src="/ScriptResource.axd?d=2PK3hhGAvoIgcgnhXCzf8KOYjWfeLpDecH89lCU2mEWFBmxnqWm_A3JPatnFYphqRrCpHOl0R4yWtjRlpIoeT5sjjgZjrL1O6N2m04_GvpxgUIlpPNfKTTW05WibV4ghX_LsmSXjuZEqwrcfcC4UCfxYpgo1&amp;t=ffffffff805766b3" type="text/javascript">
+   </script>
+   <script src="/ScriptResource.axd?d=ATdPYYYtcQJLSPE-grPJjDG3XsyoaOHG17kxYMqIIgl431sdit_0xDSwM92GNlIpOdReoU98Ga4dytYwnjn9RJG4yuhunm3FhjJv6yeZtND_RV4wrPQH0bofgDDUtly3hMDd7oE6bV9fZHiBXiyamPPUKbjrUGZuePL3ZcHRWZWGtk7r0&amp;t=ffffffff805766b3" type="text/javascript">
+   </script>
+   <script src="/ScriptResource.axd?d=icZLyHRCu4FWl4T-BFLBgAsHSKmZicBgg-3RqhNzz8Bqf8wtcjze2u46JfXemfmoCq_kGkxQ8DdKG0nD_VYil3GHKLPxBpb1LsLPw_Opn77LE4TUJ7PbBfsg7OQQmXlzVgPe9Q0zKbhXaVY-utlcZCZw_O41&amp;t=4c8aee96" type="text/javascript">
+   </script>
+   <script src="/ScriptResource.axd?d=VbZeCbu30IrXOlrppRE8EziqJfK0ZJEvnglZu5XUtpMWmQvgf4q1wEhQcscMLlReW-AiPXkkkHerv7xsO33whPXJo0vRJ4E_oHbW1DW6J32Ge05aPP78qL8eO1aZMxkaUp70fEynRr3Mz_NCRGoGubPMo-mvvbHLjndVg0aYCCo1pmzC0&amp;t=4c8aee96" type="text/javascript">
+   </script>
+   <script src="/ScriptResource.axd?d=DpXwd3l4lBCo6E6_zt4FYf46emy0O71_-wM1T6ygLQYwF4Nm14zORLLJrpH3SLOCE3MHvwROOSAvFONNu6SFfZEAQru_lfDyZag-MYPOoLIUeqPfsG4XpzjwBUTm6pMrHwUOfWMFlRvDjQcrjyKPmlEcIQ3GBLJp4I7bCeIDNBoVYHqUQasG92YnAz1TXZG9SnH7Vw2&amp;t=4c8aee96" type="text/javascript">
+   </script>
+   <script src="/ScriptResource.axd?d=OHueKjhVWdxXPnl9v8GF9pBe4cpH-NvkG4mVxfjmpjAXUNm0b9cI5Fni1vwpipbjNV1_0_H8aMPtQ5Xnfps1rBKEyMeZNgTxtM5-bJ8xDuLzHd0S2hLmWWFen1so_pmW4nziZM4g44HbM_mPnfCaG5MPTPc7mClNHBd1RCFWc8oxMRPO0&amp;t=4c8aee96" type="text/javascript">
+   </script>
+   <script src="/ScriptResource.axd?d=koA2ONAL3SluCPWt6ZoFupEvB0LdQVC76sbCGLYs1gsyQGHbjRZjLJ95U_djcG3WbuXokm3osbKcbWvt7B0smURMZOMtvDFJStT_uNIoDLAta-3eGSQc6o8TpBLcIEWonBN1Y_Xn2ViB-fG8m0-FP3tJxJp3IiDn3yTJH16__GVYknwZ0&amp;t=4c8aee96" type="text/javascript">
+   </script>
+   <script src="/ScriptResource.axd?d=8yT1qaZPH3s1Ym50QhBBFb8Ql0luZZlX5Kos8G5is_O09eqRKbGnO5vGsr6JagpX_QUjqR4rFAwzknAMlgc7YlFiZygIRwXOi1Be3X3c44npRE5TjC5VsDm2pI5BYNsC7hwAYaLxcuARYZ0OVcfEtg9Fyxj8Qg_y0kfrZtTD71jgpOt451hsF4BLuYPNny9LWBNAcw2&amp;t=4c8aee96" type="text/javascript">
+   </script>
+   <script src="/ScriptResource.axd?d=m_A_F8vg7FY-OWt-5swU-KBrpJUBpt-WOzZJ05pVdqDTIgAPBHMrf346FjY2LAF_w6syHt0WMVN8VNRbebEIlUqThBe5lRjzMVuHmsOKmAsoByvyuK8LAsKYNmTRSXC_YSwvSlJibXqzpNJT8qgiq2TuFU5FxWCrNi-LBfAohKNUICnr1Bo6KlYCcaZVatSIX4Nopg2&amp;t=4c8aee96" type="text/javascript">
+   </script>
+   <div>
+    <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="99EE4EAD"/>
+    <input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="/wEdAAxEKu2ZVIt40vz/YxSG4BY7tEgWDP+JKneaOsOzNwBSjasO/H2PKS5rxKbA9qyvrp21QGbz3rUxdCdWVGTLOguXIjQwNbRozK4LKo8BwxciUtaiTgqCMNHxZgVzcX0T4X34Qf2IytFCM0w4zfjdvDAnxgSohBgaJTPALXo6QOaVK7qic3S0ZDjCzqE9M2ZhdeS53M+jv3MVqCGXNRznI/9dOKMvA56RWX5oETZ8ATCdBdN1EWNWi8ueBjTjFXWTVhLsV6AOSP1TgeNtw7ClSU4aaiPBww=="/>
+   </div>
+   <script type="text/javascript">
+    //<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', [], [], [], 90, '');
+//]]>
+   </script>
+   <div style="padding-left: 9px;">
+    <div id="spnError" style="text-align: center">
+     <span class="Error" id="lblError" style="font-size:Medium;font-weight:bold;">
+     </span>
+    </div>
+    <div id="LoadOffer">
+     <table border="0" cellpadding="5" cellspacing="0" id="tblOutsideTable" width="650px">
+      <tr align="left" valign="top">
+       <td colspan="3" style="width: 40px; white-space: nowrap;">
+        <span class="Head1" style="white-space: nowrap;">
+         <span id="lblSpotBid" style="font-weight:bold;">
+          Spot Bids
+         </span>
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel" style="width: 25px;">
+        <span id="lblMaskLoadNumber">
+         Load Number
+        </span>
+       </td>
+       <td colspan="2">
+        <span id="MaskLoadNumber">
+         ****8837
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblCarrierContact">
+         Carrier Contact
+        </span>
+       </td>
+       <td colspan="2">
+        <span id="CarrierContact">
+         Brooke Penn
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblBranch">
+         Branch
+        </span>
+       </td>
+       <td colspan="2">
+        <span id="Branch">
+         TMC Johnson Controls - 0590
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblPhone">
+         Phone
+        </span>
+       </td>
+       <td colspan="2">
+        <span id="Phone">
+         800-967-9619
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblCustomer">
+         Customer
+        </span>
+       </td>
+       <td colspan="2">
+        <span id="Customer">
+         JCI SAP - Common Carrier
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblAdditionalNotes">
+         Additional Notes
+        </span>
+       </td>
+       <td colspan="2">
+        <div style="width: 500px; height: auto;">
+        </div>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblHazMat1">
+         Haz Mat
+        </span>
+       </td>
+       <td colspan="2">
+        <div style="float: left;">
+         <span id="HazMat1">
+          No
+         </span>
+        </div>
+        <div style="color: red; font-weight: bold; text-align: center;">
+        </div>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblCustomerEffectiveDate">
+         Customer Effective Date
+        </span>
+       </td>
+       <td colspan="2">
+        <span id="fldCustomerEffectiveDate">
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblCustomerExpirationDate">
+         Customer Expiration Date
+        </span>
+       </td>
+       <td colspan="2">
+        <span id="fldCustomerExpirationDate">
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td class="TMCLabel">
+        <span id="lblDisclaimer">
+         Disclaimer
+        </span>
+       </td>
+       <td colspan="2">
+        <span id="Disclaimer">
+         Submitting a rate does not guarantee award of the load. Each submission is reviewed. You will receive notification after the review. Load tender for the shipment with submitted rate
+         <b>
+          OR
+         </b>
+         Email notifying you that the submitted rate was rejected.
+        </span>
+       </td>
+      </tr>
+      <tr align="left" valign="top">
+       <td colspan="3">
+       </td>
+      </tr>
+      <tr align="center" id="trLoadStops" valign="top">
+       <td colspan="3">
+        <br/>
+        <table border="1" cellpadding="4" cellspacing="0" class="TableBorder" id="UcSpotBidLoadStops1_Table1" width="100%">
+         <tr class="ShadedRow">
+          <td>
+           <span id="UcSpotBidLoadStops1_lblPickDropLabel" style="font-weight:bold;">
+            P/D
+           </span>
+          </td>
+          <td>
+           <span id="UcSpotBidLoadStops1_lblCityLabel" style="font-weight:bold;">
+            City
+           </span>
+          </td>
+          <td>
+           <span id="UcSpotBidLoadStops1_lblStateLabel" style="font-weight:bold;">
+            State/Country
+           </span>
+          </td>
+          <td>
+           <span id="UcSpotBidLoadStops1_lblDateLabel" style="font-weight:bold;">
+            Date
+           </span>
+          </td>
+          <td>
+           <span id="UcSpotBidLoadStops1_lblHoursLabel" style="font-weight:bold;">
+            Hours
+           </span>
+          </td>
+          <td>
+           <span id="UcSpotBidLoadStops1_lblWeightLabel" style="font-weight:bold;">
+            Weight(lbs.)
+           </span>
+          </td>
+          <td>
+           <span id="UcSpotBidLoadStops1_lblProductLabel" style="font-weight:bold;">
+            Product
+           </span>
+          </td>
+          <td>
+           <span id="UcSpotBidLoadStops1_lblWorkLabel" style="font-weight:bold;">
+            Work
+           </span>
+          </td>
+          <td>
+           <span id="UcSpotBidLoadStops1_lblStopNoteLabel" style="font-weight:bold;">
+            Notes
+           </span>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="1">
+           Pickup
+          </td>
+          <td colspan="1">
+           Red Oak
+          </td>
+          <td colspan="1">
+           IA
+          </td>
+          <td colspan="1">
+           6/12/2015
+          </td>
+          <td colspan="1">
+           7:00 AM-3:00 PM
+          </td>
+          <td align="Right" colspan="1">
+           44,498.1
+          </td>
+          <td colspan="1">
+           GRID/POS/L/0.62/PF/P3
+          </td>
+          <td colspan="1">
+           Count
+          </td>
+          <td colspan="1">
+           <a href='javascript:displayNotes("Contact Name: Jay Amin
+Trailer# ___");'>
+            Click for Notes
+           </a>
+          </td>
+         </tr>
+         <tr>
+          <td colspan="1">
+           Drop Off
+          </td>
+          <td colspan="1">
+           Canby
+          </td>
+          <td colspan="1">
+           OR
+          </td>
+          <td colspan="1">
+           6/12/2015-6/15/2015
+          </td>
+          <td colspan="1">
+           7:30 AM-10:00 PM
+          </td>
+          <td align="Right" colspan="1">
+           44,498.1
+          </td>
+          <td colspan="1">
+           GRID/POS/L/0.62/PF/P3
+          </td>
+          <td colspan="1">
+           Count
+          </td>
+          <td colspan="1">
+          </td>
+         </tr>
+         <tr align="right">
+          <td colspan="1">
+          </td>
+          <td align="Right" colspan="8">
+           Total Distance(mi):  1,712
+          </td>
+         </tr>
+        </table>
+       </td>
+      </tr>
+      <tr id="trMileDisclaimer">
+       <td align="right" colspan="3">
+        <span id="lblMileDisclaim">
+         The mileage represented here may differ from other similar mileage programs.
+        </span>
+       </td>
+      </tr>
+      <tr align="center" id="trLoadStopSpacer" valign="top">
+       <td colspan="3">
+        <br/>
+       </td>
+      </tr>
+      <tr id="trLoadRequirements">
+       <td>
+       </td>
+       <td align="center" colspan="2">
+        <table border="0" cellpadding="0" cellspacing="0" width="50%">
+         <tr align="center" class="head2" valign="top">
+          <td>
+          </td>
+          <td class="head2" colspan="2">
+           <span id="lblLoadReq" style="font-weight:bold;">
+            Load Requirements
+           </span>
+          </td>
+          <td style="width: 800px;">
+          </td>
+         </tr>
+         <tr align="center" valign="top">
+          <td>
+          </td>
+          <td align="right" class="TMCLabel">
+           <span id="lblEquip">
+            Equipment Type
+           </span>
+          </td>
+          <td align="left">
+           <span id="Equip">
+            Van
+           </span>
+          </td>
+          <td style="width: 800px;">
+          </td>
+         </tr>
+         <tr align="center" valign="top">
+          <td>
+          </td>
+          <td align="right" class="TMCLabel">
+           <span id="lblWeight">
+            Weight(lbs.)
+           </span>
+          </td>
+          <td align="left">
+           <span id="Weight">
+            44,498.1
+           </span>
+          </td>
+          <td style="width: 800px;">
+          </td>
+         </tr>
+         <tr align="center" valign="top">
+          <td>
+          </td>
+          <td align="right" class="TMCLabel">
+           <span id="lblTeamRequired">
+            Team Required
+           </span>
+          </td>
+          <td align="left">
+           <span id="TeamRequired">
+            No
+           </span>
+          </td>
+          <td>
+           <div class="Acknowledgement">
+           </div>
+          </td>
+         </tr>
+         <tr align="center" valign="top">
+          <td>
+          </td>
+          <td align="right" class="TMCLabel">
+           <span id="lblWeightTix">
+            Weight Tix Required
+           </span>
+          </td>
+          <td align="left">
+           <span id="WeightTix">
+            No
+           </span>
+          </td>
+          <td>
+           <div class="Acknowledgement">
+           </div>
+          </td>
+         </tr>
+         <tr align="center" valign="top">
+          <td>
+          </td>
+          <td align="right" class="TMCLabel">
+           <span id="lblDropTrailer">
+            Drop Trailer Required
+           </span>
+          </td>
+          <td align="left">
+           <span id="DropTrailer">
+            No
+           </span>
+          </td>
+          <td>
+           <div class="Acknowledgement">
+           </div>
+          </td>
+         </tr>
+         <tr align="center" valign="top">
+          <td>
+          </td>
+          <td align="right" class="TMCLabel">
+           <span id="lblHazMat2">
+            Haz Mat
+           </span>
+          </td>
+          <td align="left">
+           <span id="HazMat2">
+            No
+           </span>
+          </td>
+          <td>
+           <div class="Acknowledgement">
+           </div>
+          </td>
+         </tr>
+        </table>
+       </td>
+      </tr>
+      <tr style="height: 40px">
+       <td colspan="2">
+        <span disabled="disabled" style="white-space: nowrap;">
+         <input disabled="disabled" id="rbContract" name="bidType" onclick="AddTotal();" type="radio" value="rbContract"/>
+         <label for="rbContract">
+          Offer My Contracted Rate
+         </label>
+        </span>
+       </td>
+       <td align="left">
+       </td>
+      </tr>
+      <tr>
+       <td colspan="2" style="white-space: nowrap;">
+        <input checked="checked" id="rbSpotRate" name="bidType" onclick="AddTotal();" type="radio" value="rbSpotRate"/>
+        <label for="rbSpotRate">
+         Offer Spot Rate
+        </label>
+       </td>
+       <td align="left">
+        <div id="pnlCharges2">
+         <table border="1">
+          <tr>
+           <td colspan="5" id="tdChargeHeader">
+            <tr class="Header">
+             <td width="185">
+              Code/Description
+             </td>
+             <td width="80">
+              Type
+             </td>
+             <td width="80">
+              Units
+             </td>
+             <td width="80">
+              Per Unit (USD       )
+             </td>
+             <td width="80">
+              Cost (USD       )
+             </td>
+            </tr>
+           </td>
+          </tr>
+          <tr>
+           <td align="center" id="tdUserChargeCodes">
+            <select id="ddlUserChargeCodes" name="ddlUserChargeCodes">
+             <option selected="selected" value="400">
+              400 - Line Haul
+             </option>
+            </select>
+            <input id="UserCostID" name="UserCostID" type="hidden" value="1620235"/>
+           </td>
+           <td align="center" id="tdUserRateType">
+            <span id="UserRateType">
+             F
+            </span>
+           </td>
+           <td align="center" id="tdUserUnits">
+            <span id="UserUnits">
+             1.00
+            </span>
+           </td>
+           <td align="center" id="tdUserChargeAmount">
+            <input id="userChargeAmount_clientState" name="userChargeAmount_clientState" type="hidden"/>
+            <input class="igte_Edit" id="userChargeAmount" name="userChargeAmount" onblur="AddTotal();" readonly="readonly" style="ime-mode:disabled;text-align:right;" title="{0}" type="text" value="4,150.00"/>
+            <input id="hiddenChargeAmount" name="hiddenChargeAmount" type="hidden" value="4,150.00"/>
+           </td>
+           <td align="center" id="tdUserTotal" style="white-space: nowrap;">
+            <span id="UserTotal">
+             4,150.00
+            </span>
+           </td>
+          </tr>
+         </table>
+        </div>
+       </td>
+      </tr>
+      <tr>
+       <td colspan="3">
+        <br/>
+        <a href="javascript:__doPostBack('lnkAttachments','')" id="lnkAttachments" onclick='javascript: DisplayPopup("9zV764BbndwUDk2VD43bLA==", "lq7iyu9OpWpG6Cd3rq1OqQ==", "SpotBidAttachments.aspx", "525"); return false;'>
+         View/Upload Attachments (0 Attachments)
+        </a>
+        <br/>
+       </td>
+      </tr>
+      <tr style="width: 100%">
+       <td colspan="3" style="width: 100%">
+        <table style="width: 100%">
+         <tr id="trEffectiveDate" style="width: 100%">
+          <td style="width: 50%; text-align: right;">
+           <span class="TMCLabel" id="lblOfferEffectiveDate">
+            Offer Effective
+           </span>
+          </td>
+          <td style="width: 50%; text-align: left;">
+           <input id="fldOfferEffectiveDate_clientState" name="fldOfferEffectiveDate_clientState" type="hidden"/>
+           <table border="0" cellpadding="0" cellspacing="0" class="DateInputField igte_EditWithButtons" id="fldOfferEffectiveDate" title="{0}">
+            <tr>
+             <td class="igte_Inner" valign="top">
+              <input class="DateInputField igte_EditInContainer" data-ig="x:288700357.0:mkr:3" readonly="readonly" style="ime-mode:disabled;padding:0px;float:left;height:100%;width:98%;" type="text" value="6/11/2015"/>
+             </td>
+             <td align="center" class="igte_Button igte_ButtonSize" data-ig="x:288700357.1:mkr:2" style="line-height:1px;font-size:1px;" valign="middle">
+              <img alt="Drop Down Calendar" class="igte_ButtonImg" src="../../ig_res/Default/images/igte_custom.gif"/>
+             </td>
+            </tr>
+           </table>
+          </td>
+         </tr>
+         <tr id="trExpirationDate" style="width: 100%">
+          <td style="width: 50%; text-align: right;">
+           <span class="TMCLabel" id="lblOfferExpirationDate">
+            Offer Expires
+           </span>
+          </td>
+          <td style="width: 50%; text-align: left;">
+           <input id="fldOfferExpirationDate_clientState" name="fldOfferExpirationDate_clientState" type="hidden"/>
+           <table border="0" cellpadding="0" cellspacing="0" class="DateInputField igte_EditWithButtons" id="fldOfferExpirationDate" title="{0}">
+            <tr>
+             <td class="igte_Inner" valign="top">
+              <input class="DateInputField igte_EditInContainer" data-ig="x:1082412909.0:mkr:3" readonly="readonly" style="ime-mode:disabled;padding:0px;float:left;height:100%;width:98%;" type="text" value="6/11/2015"/>
+             </td>
+             <td align="center" class="igte_Button igte_ButtonSize" data-ig="x:1082412909.1:mkr:2" style="line-height:1px;font-size:1px;" valign="middle">
+              <img alt="Drop Down Calendar" class="igte_ButtonImg" src="../../ig_res/Default/images/igte_custom.gif"/>
+             </td>
+            </tr>
+           </table>
+          </td>
+         </tr>
+         <tr style="width: 100%">
+          <td style="width: 50%; text-align: right;">
+           <span id="lblGrandTotal">
+            Grand Total:
+           </span>
+           <span id="lblCurrency">
+            USD
+           </span>
+          </td>
+          <td style="width: 50%; text-align: left;">
+           <input id="GrandTotal_clientState" name="GrandTotal_clientState" type="hidden"/>
+           <input class="igte_Edit" disabled="true" id="GrandTotal" name="GrandTotal" readonly="readonly" style="width:100px;ime-mode:disabled;text-align:center;" title="{0}" type="text" value="4,150.00"/>
+          </td>
+         </tr>
+        </table>
+       </td>
+      </tr>
+      <tr>
+       <td align="center" colspan="6">
+       </td>
+      </tr>
+      <tr>
+       <td colspan="3">
+        <span id="ResponseMessage">
+        </span>
+       </td>
+      </tr>
+      <tr>
+       <td align="center" colspan="3">
+        <input id="btnSubmitOffer" name="btnSubmitOffer" type="submit" value="Make Offer"/>
+        <input id="btnClose" name="btnClose" onclick="window.close();" type="submit" value="Close"/>
+       </td>
+      </tr>
+      <tr>
+       <td align="center" colspan="3">
+        <input id="btnDelete" name="btnDelete" type="submit" value="Delete Previous Offer"/>
+       </td>
+      </tr>
+      <tr>
+       <td align="center" colspan="3">
+        <span style="color: red;">
+         <span id="lblLineHaulWarning">
+          Please submit line haul price only.
+         </span>
+         <br/>
+         <br/>
+         <span id="lblWarningsAccessorial">
+          All accessorial including fuel will be paid according to the contracted accessorial agreement.
+         </span>
+         <br/>
+         <span id="lblWarnings">
+          By submitting this offer, you are willing to haul this load at the submitted rate. This offer does not guarantee that you will be booked on this load.
+         </span>
+        </span>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+   <input id="wdwNotes_clientState" name="wdwNotes_clientState" type="hidden"/>
+   <div class="background-color:#000; ig_Control igdw_Control :=CtlMain:layout" id="wdwNotes" style="height:300px;width:400px;visibility:hidden;overflow:hidden;left:5%;top:40%;position:absolute;display:none;">
+    <div class="ig_Header igdw_HeaderArea" data-ig="x:wdwNotes.0:obj:header" style="overflow:hidden;">
+     <table cellpadding="0" cellspacing="0" style="width:100%;height:100%;table-layout:fixed;">
+      <tr>
+       <td class="igdw_HeaderCornerLeft" data-ig="x:wdwNotes.1:mkr:8">
+       </td>
+       <td class="igdw_HeaderContent" data-ig="x:wdwNotes.2:mkr:7" style="white-space:nowrap;overflow:hidden;">
+        <span class="igdw_HeaderCaption" data-ig="x:wdwNotes.3:mkr:1">
+         Notes
+        </span>
+       </td>
+       <td class="igdw_HeaderContent igdw_HeaderButtonArea" style="width:15px;text-align:right;white-space:nowrap;">
+        <img alt="Close" data-ig="x:wdwNotes.4:mkr:Close" src="../../ig_res/Default/images/igdw_Close.gif"/>
+       </td>
+       <td class="igdw_HeaderCornerRight" data-ig="x:wdwNotes.5:mkr:9">
+       </td>
+      </tr>
+     </table>
+    </div>
+    <div data-ig="x:wdwNotes.6:obj:body">
+     <table cellpadding="0" cellspacing="0" style="width:100%;table-layout:fixed;">
+      <tr>
+       <td class="igdw_BodyEdgeLeft" data-ig="x:wdwNotes.7:mkr:10">
+       </td>
+       <td class="igdw_BodyContentArea" data-ig="x:wdwNotes.8:mkr:11">
+        <div class="igdw_BodyContent" data-ig="x:wdwNotes.9:mkr:16" style="overflow:Auto;width:100%;height:100%;">
+         <textarea cols="20" id="wdwNotes_tmpl_txtNotes" name="wdwNotes$tmpl$txtNotes" rows="2" style="height:250px;width:375px;">
+         </textarea>
+        </div>
+       </td>
+       <td class="igdw_BodyEdgeRight" data-ig="x:wdwNotes.10:mkr:12">
+       </td>
+      </tr>
+      <tr>
+       <td class="igdw_BodyCornerBottomLeft" data-ig="x:wdwNotes.11:mkr:13">
+       </td>
+       <td class="igdw_BodyEdgeBottom" data-ig="x:wdwNotes.12:mkr:14">
+       </td>
+       <td class="igdw_BodyCornerBottomRight" data-ig="x:wdwNotes.13:mkr:15">
+       </td>
+      </tr>
+     </table>
+    </div>
+   </div>
+   <script type="text/javascript">
+    function DisplayPopup(loadNum, carrierId, pageRelativeUrl, width) {
+                // Make sure all special characters are encoded
+
+                loadNum = escape(loadNum);
+                loadNum = loadNum.replace(/\+/g, '%2B');
+                loadNum = loadNum.replace(/\*/g, '%2A');
+                loadNum = loadNum.replace(/\//g, '%2F');
+                loadNum = loadNum.replace(/@/g, '%40');
+
+                carrierId = escape(carrierId);
+                carrierId = carrierId.replace(/\+/g, '%2B');
+                carrierId = carrierId.replace(/\*/g, '%2A');
+                carrierId = carrierId.replace(/\//g, '%2F');
+                carrierId = carrierId.replace(/@/g, '%40');
+
+                var options = 'width=' + width + ',height=500,left=200,top=300,menubar=no,toolbar=no,titlebar=yes,resizable=1,scrollbars=1';
+                window.open(pageRelativeUrl + '?LoadNumber=' + loadNum + '&CarrierID=' + carrierId, 'SpotBidMoreInfo', options);
+            }
+
+            //userChargeParams is injected server side
+
+            function AddTotal() {
+                var userChargeAmountControl = $('#userChargeAmount');
+                var userChargeValue = ConvertCultureFormattedDecimalToJsDecimal(userChargeAmountControl.val());
+                var grandTotal = userChargeParams.totalReadonlyCosts;
+                
+                if (isNaN(userChargeValue)) {
+                    $('#UserTotal').text('');
+                } else {
+                    $('#UserTotal').text(FormatJsDecimalToCultureFormattedDecimal(userChargeValue));
+
+                    if ($('#rbSpotRate').is(':checked')) {
+                        grandTotal = grandTotal + userChargeValue;
+                    } 
+
+                    var originalCost = ConvertCultureFormattedDecimalToJsDecimal($('#hiddenChargeAmount').val());
+                    grandTotal = grandTotal - originalCost;
+                }
+                
+                $find('GrandTotal').set_value(FormatJsDecimalToCultureFormattedDecimal(grandTotal));
+            }
+            
+            function ConvertCultureFormattedDecimalToJsDecimal(formattedStr) {
+                if (formattedStr == null || formattedStr == '') return 0;
+                var value = formattedStr;
+                
+                if (userChargeParams.NumberGroupSeparator) { //remove group separater
+                    value = value.replace(userChargeParams.NumberGroupSeparator, '');
+                }
+                if (userChargeParams.NumberDecimalSeparator) { //ensure decimal separater is a period for js conversion
+                    value = value.replace(userChargeParams.NumberDecimalSeparator, '.');
+                }
+
+                return parseFloat(value);
+            }
+            
+            function FormatJsDecimalToCultureFormattedDecimal(decimalValue) {
+                var formattedValue = isNaN(decimalValue) ? '0.00' : decimalValue.toFixed(2);
+
+                var valueSections = formattedValue.split('.');
+               
+                if (userChargeParams.NumberGroupSeparator) { //add culture specific group separators 
+                    valueSections[0] = addGroupSeperators(valueSections[0]);
+                }
+
+                if (userChargeParams.NumberDecimalSeparator) { //convert to culter decimal separator
+                    formattedValue = valueSections.join(userChargeParams.NumberDecimalSeparator);
+                } else {
+                    formattedValue = valueSections.join('.');
+                }
+
+                return formattedValue;
+            }
+            
+            function addGroupSeperators(str) {
+                var amount = new String(str);
+                amount = amount.split("").reverse();
+
+                var output = "";
+                for (var i = 0; i <= amount.length - 1; i++) {
+                    output = amount[i] + output;
+                    if ((i + 1) % 3 == 0 && (amount.length - 1) !== i) output = userChargeParams.NumberGroupSeparator + output;
+                }
+                return output;
+            }
+   </script>
+   <input id="_ig_def_dp_cal_clientState" name="_ig_def_dp_cal_clientState" type="hidden"/>
+   <table border="0" cellpadding="0" cellspacing="0" class="igmc_Control" id="_ig_def_dp_cal" style="position:absolute;display:none;visibility:hidden;">
+    <tr>
+     <td class="igmc_Header" colspan="7" data-ig="x:1474308947.0:mkr:6">
+      <input alt="" data-ig="x:1474308947.1:mkr:7" style="position:absolute;z-index:-1;outline:0;width:1px;height:1px;font-size:1px;padding:0px;border:0px;" type="button"/>
+      <table border="0" cellpadding="0" cellspacing="0" style="width:100%;height:100%;">
+       <tr>
+        <td class="igmc_NextPrev" data-ig="x:1474308947.2:mkr:0">
+         <img alt="Previous Month" src="../../ig_res/Default/images/igmc_prev.gif"/>
+        </td>
+        <td align="center" style="white-space:nowrap;width:100%;" valign="middle">
+         <span class="igmc_MonthYear" data-ig="x:1474308947.3:mkr:2">
+          June 2015
+         </span>
+        </td>
+        <td class="igmc_NextPrev" data-ig="x:1474308947.4:mkr:1">
+         <img alt="Next Month" src="../../ig_res/Default/images/igmc_next.gif"/>
+        </td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+    <tr>
+     <td class="igmc_DOW" scope="col" style="width:14.286%;">
+      Sun
+     </td>
+     <td class="igmc_DOW" scope="col" style="width:14.286%;">
+      Mon
+     </td>
+     <td class="igmc_DOW" scope="col" style="width:14.286%;">
+      Tue
+     </td>
+     <td class="igmc_DOW" scope="col" style="width:14.286%;">
+      Wed
+     </td>
+     <td class="igmc_DOW" scope="col" style="width:14.286%;">
+      Thu
+     </td>
+     <td class="igmc_DOW" scope="col" style="width:14.286%;">
+      Fri
+     </td>
+     <td class="igmc_DOW" scope="col" style="width:14.286%;">
+      Sat
+     </td>
+    </tr>
+    <tr data-ig="x:1474308947.5:mkr:5">
+     <td class="igmc_Day igmc_WeekendDay igmc_OtherMonthDay">
+      31
+     </td>
+     <td class="igmc_Day">
+      1
+     </td>
+     <td class="igmc_Day">
+      2
+     </td>
+     <td class="igmc_Day">
+      3
+     </td>
+     <td class="igmc_Day">
+      4
+     </td>
+     <td class="igmc_Day">
+      5
+     </td>
+     <td class="igmc_Day igmc_WeekendDay">
+      6
+     </td>
+    </tr>
+    <tr>
+     <td class="igmc_Day igmc_WeekendDay">
+      7
+     </td>
+     <td class="igmc_Day">
+      8
+     </td>
+     <td class="igmc_Day">
+      9
+     </td>
+     <td class="igmc_Day">
+      10
+     </td>
+     <td class="igmc_Day igmc_TodayDay">
+      11
+     </td>
+     <td class="igmc_Day">
+      12
+     </td>
+     <td class="igmc_Day igmc_WeekendDay">
+      13
+     </td>
+    </tr>
+    <tr>
+     <td class="igmc_Day igmc_WeekendDay">
+      14
+     </td>
+     <td class="igmc_Day">
+      15
+     </td>
+     <td class="igmc_Day">
+      16
+     </td>
+     <td class="igmc_Day">
+      17
+     </td>
+     <td class="igmc_Day">
+      18
+     </td>
+     <td class="igmc_Day">
+      19
+     </td>
+     <td class="igmc_Day igmc_WeekendDay">
+      20
+     </td>
+    </tr>
+    <tr>
+     <td class="igmc_Day igmc_WeekendDay">
+      21
+     </td>
+     <td class="igmc_Day">
+      22
+     </td>
+     <td class="igmc_Day">
+      23
+     </td>
+     <td class="igmc_Day">
+      24
+     </td>
+     <td class="igmc_Day">
+      25
+     </td>
+     <td class="igmc_Day">
+      26
+     </td>
+     <td class="igmc_Day igmc_WeekendDay">
+      27
+     </td>
+    </tr>
+    <tr>
+     <td class="igmc_Day igmc_WeekendDay">
+      28
+     </td>
+     <td class="igmc_Day">
+      29
+     </td>
+     <td class="igmc_Day">
+      30
+     </td>
+     <td class="igmc_Day igmc_OtherMonthDay">
+      1
+     </td>
+     <td class="igmc_Day igmc_OtherMonthDay">
+      2
+     </td>
+     <td class="igmc_Day igmc_OtherMonthDay">
+      3
+     </td>
+     <td class="igmc_Day igmc_WeekendDay igmc_OtherMonthDay">
+      4
+     </td>
+    </tr>
+    <tr>
+     <td class="igmc_Day igmc_WeekendDay igmc_OtherMonthDay">
+      5
+     </td>
+     <td class="igmc_Day igmc_OtherMonthDay">
+      6
+     </td>
+     <td class="igmc_Day igmc_OtherMonthDay">
+      7
+     </td>
+     <td class="igmc_Day igmc_OtherMonthDay">
+      8
+     </td>
+     <td class="igmc_Day igmc_OtherMonthDay">
+      9
+     </td>
+     <td class="igmc_Day igmc_OtherMonthDay">
+      10
+     </td>
+     <td class="igmc_Day igmc_WeekendDay igmc_OtherMonthDay">
+      11
+     </td>
+    </tr>
+    <tr>
+     <td class="igmc_Footer" colspan="7" data-ig="x:1474308947.6:mkr:4">
+      Today: 6/11/2015
+     </td>
+    </tr>
+   </table>
+   <input id="_IG_CSS_LINKS_" name="_IG_CSS_LINKS_" type="hidden" value="../../styles/jquery-ui/1.9.2/overcast/jquery-ui.css|../../styles/jquery-ui/1.9.2/overcast/jquery.ui.dialog.css|~/App_Themes/NewLook/NewLook.css|../../ig_res/Default/ig_monthcalendar.css|../../ig_res/Default/ig_dialogwindow.css|../../ig_res/Default/ig_texteditor.css|../../ig_res/Default/ig_shared.css"/>
+   <script type="text/javascript">
+    //<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Infragistics.Web.UI.WebNumericEditor, {"id":"userChargeAmount","name":"userChargeAmount","props":[[[],{"c":{"uid":"userChargeAmount","prop1":"[\"4,150.00\",\"..\",\",\",\"-\",\"\",\"n\",\"-n\",3,2,2,1,1,-7.92281625142643E+28,1,7.92281625142643E+28,0,\"\",3]","prop":"1,0,,0,1,1,,,0,,,,,6,,200,,2038:2040:2032,igte_Focus,igte_Hover,igte_NullText,"}}],,,[]]}, null, null, $get("userChargeAmount"));
+});
+Sys.Application.add_init(function() {
+    $create(Infragistics.Web.UI.WebDatePicker, {"id":"fldOfferEffectiveDate","name":"fldOfferEffectiveDate","props":[[[],{"c":{"prop1":"[\"2015-5-11-0-0-0-0,,\",\"04/08/03\",\"_  0322\",\"04/08/03\",29,0,\"_ig_def_dp_cal\",\"\",\"500,3,300,3,0,200,3,100,3,0\"]","prop":"1,0,,0,1,1,,,0,,,,,6,,200,,2038:2040:2032,igte_Focus,igte_Hover,igte_NullText,igte_InnerFocus,igte_InnerHover","uid":"fldOfferEffectiveDate","buts":"igte_ButtonHover,igte_ButtonPressed,igte_ButtonDisabled,igte_ButtonFocus,../../ig_res/Default/images/igte_customHover.gif,../../ig_res/Default/images/igte_customPress.gif,../../ig_res/Default/images/igte_customDisable.gif,"}}],,,[]]}, null, null, $get("fldOfferEffectiveDate"));
+});
+Sys.Application.add_init(function() {
+    $create(Infragistics.Web.UI.WebDatePicker, {"id":"fldOfferExpirationDate","name":"fldOfferExpirationDate","props":[[[],{"c":{"prop1":"[\"2015-5-11-0-0-0-0,,\",\"04/08/03\",\"_  0322\",\"04/08/03\",29,0,\"_ig_def_dp_cal\",\"\",\"500,3,300,3,0,200,3,100,3,0\"]","prop":"1,0,,0,1,1,,,0,,,,,6,,200,,2038:2040:2032,igte_Focus,igte_Hover,igte_NullText,igte_InnerFocus,igte_InnerHover","uid":"fldOfferExpirationDate","buts":"igte_ButtonHover,igte_ButtonPressed,igte_ButtonDisabled,igte_ButtonFocus,../../ig_res/Default/images/igte_customHover.gif,../../ig_res/Default/images/igte_customPress.gif,../../ig_res/Default/images/igte_customDisable.gif,"}}],,,[]]}, null, null, $get("fldOfferExpirationDate"));
+});
+Sys.Application.add_init(function() {
+    $create(Infragistics.Web.UI.WebNumericEditor, {"id":"GrandTotal","name":"GrandTotal","props":[[[],{"c":{"uid":"GrandTotal","prop1":"[\"4,150.00\",\"..\",\",\",\"-\",\"\",\"n\",\"-n\",3,2,2,1,1,-7.92281625142643E+28,1,7.92281625142643E+28,0,\"\",3]","prop":"1,0,,0,1,1,,,0,,,,,6,,200,,2038:2040:2032,igte_Focus,igte_Hover,igte_NullText,"}}],,,[]]}, null, null, $get("GrandTotal"));
+});
+Sys.Application.add_init(function() {
+    $create(Infragistics.Web.UI.WebDialogWindow, {"id":"wdwNotes","name":"wdwNotes","props":[[[,3,"5%","40%","400px","300px",,,,1,,0],{"c":{"uid":"wdwNotes","mbc":"igdw_ModalBackground","buts":"7igdw_ModalBackground"}}],[[[[,"Notes",,]],[[[[],{"c":{"s":"i","p":"../../ig_res/Default/images/igdw_CloseMouseDown.gif","h":"../../ig_res/Default/images/igdw_CloseHover.gif","i":"../../ig_res/Default/images/igdw_Close.gif","a":"Close"}}],,],[[[]],,],[[[]],,]],],[[[,,,,]],,]],,[]]}, null, null, $get("wdwNotes"));
+});
+Sys.Application.add_init(function() {
+    $create(Infragistics.Web.UI.WebMonthCalendar, {"id":"_ig_def_dp_cal","name":"_ig_def_dp_cal","props":[[[],{"c":{"str":"January,February,March,April,May,June,July,August,September,October,November,December,","uid":"_ig_def_dp_cal","tday":"12=Today: 6/13/2015=Today: 6/11/2015=Today: {0:d}","tdyDateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135575200000)\/","MaxSupportedDateTime":"\/Date(253402300799999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":0,"FullDateTimePattern":"dddd, MMMM d, yyyy h:mm:ss tt","LongDatePattern":"dddd, MMMM d, yyyy","LongTimePattern":"h:mm:ss tt","MonthDayPattern":"MMMM d","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"M/d/yyyy","ShortTimePattern":"h:mm tt","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":false,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"vse":0,"anim":"500,3,300,3,0,200,3,100,3,0","dates":"2015,6,1500,1,1,2500,12,31,0","myp":"## %","img":"../../ig_res/Default/images/igmc_prevHover.gif,../../ig_res/Default/images/igmc_prevPress.gif,../../ig_res/Default/images/igmc_nextHover.gif,../../ig_res/Default/images/igmc_nextPress.gif","prop":"15,3,7,2,0,0,0,0,1,1,1,2038,2040,2039,2037,2036,,,0,6,igmc_Day,igmc_WeekendDay,igmc_OtherMonthDay,igmc_TodayDay,igmc_SelectedDay,igmc_WeekNumber,igmc_HoverDay,igmc_FocusDay,igmc_DisabledDay,igmc_HoverNextPrev,igmc_PressedNextPrev,igmc_HoverMonthYear,igmc_PressedMonthYear,igmc_HoverFooter,igmc_PressedFooter,igmc_List,igmc_Item,igmc_HoverItem,igmc_SelectedItem,"}}],,,[]]}, null, null, $get("_ig_def_dp_cal"));
+});
+//]]>
+   </script>
+  </form>
+ </body>
+</html>

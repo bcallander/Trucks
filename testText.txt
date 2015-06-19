@@ -1,0 +1,1988 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <link href="/lps/resources/layout/images/favicon.ico" rel="shortcut icon">
+   <title>
+    Web Offer | 
+		 Manhattan Associates, Inc.
+   </title>
+   <script type="text/javascript">
+    var ucl_home_url = 'http://s606306at1vl913.usatln6.savvis.net:13000/ucl/auth/jsp/home.jsp';
+		var currMenu = "";
+				
+		if (document.compatMode != "CSS1Compat") alert("This page is not in Standards mode");
+   </script>
+   <link href="/lcom/common/css/LPSLayoutStyles.css" rel="stylesheet" type="text/css">
+    <link href="/lcom/common/css/styles.css" rel="stylesheet" type="text/css">
+     <link href="/lcom/common/css/navbar.css" rel="stylesheet" type="text/css">
+      <link href="/lcom/common/css/jspstyles.css" rel="stylesheet" type="text/css">
+       <script src="/lcom/common/js/common.js" type="text/javascript">
+       </script>
+      </link>
+     </link>
+    </link>
+   </link>
+  </link>
+ </head>
+ <body class="bodybbg" onhelp="fnOpenHelp(miscArr[6]);" scroll="no">
+  <!--global Top.jsp-->
+  <input id="UsrZnOfset" type="hidden" value="-18000000">
+   <input id="currentAppliedFilterId" type="hidden">
+    <script type="text/javascript">
+     var globalUserLocale = "en_US";
+    </script>
+    <script charset="utf-8" src="/lcom/common/js/popup.js" type="text/javascript">
+    </script>
+    <input name="windowId" type="hidden" value="screen-170861139">
+     <!-- leftNav.jsp -->
+     <div id="screen">
+     </div>
+     <script type="text/javascript">
+      var returnHref = "?backclick=true";
+var disableBack = false;
+var isTablet = false;
+     </script>
+     <script type="text/javascript">
+      var returnHref = "?backclick=true";
+var disableBack = false;
+var isTablet = false;
+     </script>
+     <input id="windowId" name="windowId" type="hidden" value="screen-170861139"/>
+     <script type="text/javascript">
+      var hp = new Object ();
+hp.url = 'null';
+hp.id =  'null'; 
+UI8Layout.setHomePage(hp);
+                          
+var miscArr = new Array("Customize", 
+                          "Report", 
+                          "Home", 
+                          "null",
+                          "Print",
+                          "Help", 
+                          "/lcom/common/jsp/helphelper.jsp?server=58058EBCE760C1E6074D7DBF49189C94AF47D196C5FFB7A4CC672A6F120C5A5B&uri=/ofr/ra/jsp/WebOffers.jsp", 
+                          "About",
+						  "Sign <u>O</u>ut", 
+						  "", 
+                          "1",
+                          "M",
+                          "enu",
+                          "A",
+                          "ctions",
+                          "T",
+                          "ools",
+                          "Welcome",
+                          "Find menu option",
+                          "Refresh &#40;F5&#41;",
+                          "Help &#40;F1&#41;",
+                          "Back &#40;Alt&#43;B&#41;",
+                          "Logo",
+                          "/lps/resources/layout/images/logo.png",
+                          "/lps/resources/layout/images/back.gif",
+                          "/lps/resources/layout/images/help.gif",
+                          "/lps/resources/layout/images/refresh.gif",
+                          "/lps/resources/editControl/images/find.gif"
+                          
+                          );     
+                    
+var gifArray = new Array();	
+var accKeyArr = new Array();
+var btnGifArray = new Array();
+var usertitleArray = new Array("MICHELLE LIPINA*");
+
+var defaultRegArray = new Array("");
+var defaultBUArray = new Array("");
+var signOutArray = new Array("Confirm Sign Out",
+					        "Sign out of all solutions?",
+					        "OK",
+					        "Cancel"
+					        );
+
+
+
+ 		var title = new Array("Web Offers ");
+ var mIdArr = new Array( "Actions", "Tools" );
+var mNArr = new Array( "Actions", "Tools" );
+var mTArr = new Array( "Actions", "Tools (Alt+T)" );
+var mIId0Arr = new Array( "Accept", "Decline", "Filter List" );
+var mIN0Arr = new Array( "Accept", "Decline", "Filter List" );
+var mIT0Arr = new Array( "Accept", "Decline", "Filter List" );
+var mIE0Arr = new Array( "", "", "" );
+var mIU0Arr = new Array( "parent.respondToSelected('accept')", "parent.respondToSelected('Decline')", "javascript:openFilterPopup('/ofr/filter/jsp/FilterList.jsp?objectType=CARRIER WEB&windowId=screen-170861139','Filter List')" );
+var mIJS0Arr = new Array( "", "", "" );
+var mIId1Arr = new Array( "PRINT_MENU" );
+var mIN1Arr = new Array( "PRINT_MENU" );
+var mIT1Arr = new Array( "Print" );
+var mIE1Arr = new Array( "" );
+var mIU1Arr = new Array( "javascript:printPage();event.returnValue = false;" );
+var mIJS1Arr = new Array( "" );
+var menuName= "Actions" ;
+var menuName= "Actions" ;
+
+		gifArray[0] = "/lcom/common/image/action1.gif";		
+		accKeyArr[0] = mIdArr[0].charAt(0);
+
+		gifArray[1] = "lps/resources/layout/images/open.gif";		
+		accKeyArr[1] = mIdArr[1].charAt(0);
+
+	if(!isTablet) {
+		document.write(constructUI2008ActionMenu());
+	}
+     </script>
+     <script type="text/javascript">
+      //code for new menu overlay
+//<![CDATA[
+    (function () {
+        var Mb = UI8Layout.MenuBar; 
+        Mb.addItem('phMenu', {
+            popupId: 'phMenu_child', 
+            postOpen: 'UI8Layout.Menu.postOpen', 
+            preOpen: 'UI8Layout.Menu.preOpen',
+            postClose : 'UI8Layout.Menu.postClose'
+        });
+        Mb.addItem('Actions', 
+            {popupId: 'Actions_child', postOpen: 'AXNPostOpen', preOpen: null});
+        Mb.addItem('Tools', 
+			{popupId: 'Tools_child', postOpen: 'ToolsPostOpen', preOpen: null});
+    }) ();              
+//]]>
+     </script>
+     <script type="text/javascript">
+      UI8Layout.Menu.setRequestData();
+     </script>
+     <script type="text/javascript">
+      UI8Layout.setChrome(true)
+     </script>
+     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr id="crowid">
+       <td id="navaredtd" valign="top">
+        <div id="navarea">
+         <script>
+          //<![CDATA[
+				// hidden by default
+					UI8Layout.SideNav.hide = true;
+				//]]>
+         </script>
+        </div>
+        <script>
+         //changes done for making to work in mozilla
+				var waDiv1 = document.getElementById( "navarea" );
+				 waDiv1.style.width = 250+'px';
+				//end
+        </script>
+       </td>
+       <td valign="top">
+        <div class="workarea" id="workareadiv">
+         <!-- main container -->
+         <div class="jmaincon" id="maincon">
+          <table>
+           <tr>
+            <td>
+             <script>
+              //changes done for making to work in mozilla
+				document.write(constructPopMenu());
+				var waDiv = document.getElementById( "workareadiv" );
+				 waDiv.style.width = 1027+'px';
+				//end
+             </script>
+             <script charset="utf-8" src="/lcom/common/js/popup.js" type="text/javascript">
+             </script>
+             <script charset="utf-8" src="/lcom/common/js/RaFunctions.js" type="text/javascript">
+             </script>
+             <script charset="utf-8" src="/lcom/common/js/jsplistresize.js" type="text/javascript">
+             </script>
+             <script charset="utf-8" type="text/javascript">
+              function doSort(field, direction)
+{
+	var theForm = document.forms["webOffersQuickFilterForm"];
+	theForm.sortFieldName.value=field;
+	theForm.sortDirection.value=direction;
+	theForm.page.value=0;
+	theForm.submit();
+}
+
+function submitForm()
+{
+	var theForm = document.forms["webOffersQuickFilterForm"];
+	theForm.submit();
+}
+
+function setupQuickFilter()
+{
+	var theForm = document.forms["webOffersQuickFilterForm"];
+	var selectedNum;
+	selectedNum = theForm.offerStatusAndReply.selectedIndex;
+	if (selectedNum > 7)
+	{
+		theForm.offerResponse.value = theForm.offerStatusAndReply.options[selectedNum].value;
+		theForm.offerStatus.value = "";
+	}
+	else if (selectedNum > 1 && selectedNum < 7)
+	{
+		theForm.offerStatus.value = theForm.offerStatusAndReply.options[selectedNum].value;
+		theForm.offerResponse.value = "";
+	}
+	else
+	{
+		theForm.offerStatus.value = "";
+		theForm.offerResponse.value = "";
+	}
+}
+
+function respondToSelected(responseType)
+{
+	var theForm = document.forms["webOffersForm"];
+	theForm.shipmentIdList.value = checkedToList(theForm.shipmentId) ;
+	if (theForm.shipmentIdList.value == "")
+	{
+		// TODO : Move it to ResourceBundle
+		alert('You must select at least one shipment to respond to.');
+	}
+	else
+	{
+		theForm.responseType.value = responseType;
+		theForm.submit();
+	}
+}
+
+function checkSizeAgainstMax(textArea, str, maxLen)
+{
+    if (str.length > maxLen)
+	{
+         textArea.value = textArea.value.substring(0, maxLen);
+    }
+}
+             </script>
+             <form action="/ofr/ra/jsp/WebOffers.jsp" method="get" name="webOffersQuickFilterForm">
+              <input name="shipmentIdList" type="hidden">
+               <input name="sortFieldName" type="hidden">
+                <input name="sortDirection" type="hidden">
+                 <input name="page" type="hidden">
+                  <input name="windowId" type="hidden" value="screen-170861139">
+                   <!--<table cellspacing=0 cellpadding=0 width='100%' border=0>
+	<tr>
+		<td class='thead'>Web Offer List</td>
+	</tr>
+</table>-->
+                   <!--<div id="jlistcon1" class="jlistcon">-->
+                   <div class="jlistctlcon" id="jlistctlcon1">
+                    <table width="100%">
+                     <tr>
+                      <td align="left" id="pageSpace">
+                      </td>
+                      <td class="sectionheadernavigation">
+                       Default Filter |
+                       <a class="sectionheaderlink" href="#" onclick="openFilterPopup('/ofr/filter/jsp/FilterList.jsp?objectType=CARRIER WEB&amp;windowId=screen-170861139','Filter List');">
+                        Filter List
+                       </a>
+                      </td>
+                     </tr>
+                    </table>
+                   </div>
+                   <input name="windowId" type="hidden" value="screen-170861139">
+                   </input>
+                  </input>
+                 </input>
+                </input>
+               </input>
+              </input>
+             </form>
+            </td>
+           </tr>
+          </table>
+         </div>
+         <!--<div id="jlisttablecon1" class="jlisttablecon">-->
+         <table cellpadding="0" cellspacing="0" class="jlisttable" id="jlisttable1">
+          <tr class="jlisthdrrow">
+           <td class="jlistcb">
+            <input name="checkAll" onclick="checkUncheckAll_OnlyEnabledRows(document.webOffersForm.shipmentId,checkAll.checked);" type="checkbox"/>
+           </td>
+           <td class="listheader">
+            <img alt="Event List Notification" border="0" src="/lcom/common/image/event3.gif"/>
+           </td>
+           <td class="listheader">
+            <a class="listdatalink" href="javascript:doSort('num_alerts','down')">
+             <img alt="Alerts" border="0" src="/lcom/common/image/alert.gif"/>
+            </a>
+            <br>
+             <a class="listdatalink" href="javascript:doSort('rs_type','down')" title="Capacity Finder - Dynamic">
+              CF-D
+             </a>
+            </br>
+           </td>
+           <td class="listheader">
+            <a class="listdatalink" href="javascript:doSort('UPPER(company_name)','up')">
+             Shipper
+            </a>
+            <br>
+             <a class="listdatalink" href="javascript:doSort('UPPER(tc_shipment_id)','down')">
+              Shipment ID
+             </a>
+            </br>
+           </td>
+           <td class="listheader">
+            <a class="listdatalink" href="javascript:doSort('invite_status','up')">
+             Offer Status
+            </a>
+            <br>
+             <a class="listdatalink" href="javascript:doSort('bid_response','up')">
+              Carrier Reply
+             </a>
+            </br>
+           </td>
+           <td class="listheader">
+            <a class="listdatalink" href="javascript:doSort('invite_status,response_time_remaining','up')">
+             Time Remaining
+            </a>
+           </td>
+           <td class="listheader">
+            <a class="listdatalink" href="javascript:doSort('UPPER(O_FACILITY_ID)','up')">
+             Customer
+            </a>
+            <br>
+             <a class="listdatalink" href="javascript:doSort('UPPER(o_state_prov)','up')">
+              Origin
+             </a>
+            </br>
+           </td>
+           <td class="listheader">
+            <a class="listdatalink" href="javascript:doSort('UPPER(D_FACILITY_ID)','up')">
+             Customer
+            </a>
+            <br>
+             <a class="listdatalink" href="javascript:doSort('UPPER(d_state_prov)','up')">
+              Destination
+             </a>
+            </br>
+           </td>
+           <td class="listheader">
+            <a class="listdatalink" href="javascript:doSort('num_stops','down')">
+             Stop-offs
+            </a>
+           </td>
+           <td class="listheader">
+            <a class="listdatalink" href="javascript:doSort('pickup_start_dttm','up')">
+             Pickup Start
+            </a>
+            <br>
+             <a class="listdatalink" href="javascript:doSort('delivery_end_dttm','up')">
+              Delivery End
+             </a>
+            </br>
+           </td>
+          </tr>
+          <tr class="trow">
+           <td class="listdata" colspan="3">
+            <button class="btn" onblur="this.className='btn'" onclick="javascript:submitForm()" onfocus="this.className='btnfocus'" type="button">
+             Apply
+            </button>
+           </td>
+           <td class="listdata">
+            <select name="shipperId">
+             <option value="-1">
+              -All-
+             </option>
+             <option value="50194">
+              BAUGH SUPPLY CHAIN, Inc. US
+             </option>
+             <option value="50196">
+              BAUGH SUPPLY CHAIN, Inc. SAP
+             </option>
+            </select>
+            <script charset="utf-8" type="text/javascript">
+             sortSelect(document.webOffersQuickFilterForm.shipperId);
+				selectOption(document.webOffersQuickFilterForm.shipperId, -1);
+            </script>
+           </td>
+           <td class="listdata">
+            <input name="offerStatus" type="hidden" value="-1">
+             <input name="offerResponse" type="hidden" value="-1">
+              <select name="offerStatusAndReply" onchange="setupQuickFilter()">
+               <option value="-1">
+                -All-
+               </option>
+               <option>
+                --Status--
+               </option>
+               <option value="Open">
+                Open
+               </option>
+               <option value="Closed">
+                Closed
+               </option>
+               <option value="Awarded">
+                Awarded
+               </option>
+               <option value="Not Awarded">
+                Not Awarded
+               </option>
+               <option value="Cancelled">
+                Canceled
+               </option>
+               <option>
+                --Reply--
+               </option>
+               <option value="No Response">
+                No response
+               </option>
+               <option value="Accept">
+                Accept
+               </option>
+               <option value="Decline">
+                Decline
+               </option>
+               <option value="Price Pending">
+                Price Pending
+               </option>
+              </select>
+             </input>
+            </input>
+           </td>
+           <td class="listdata">
+            <select name="minutesRemaining">
+             <option value="-1">
+              -All-
+             </option>
+             <option value="3">
+              &lt;3 min.
+             </option>
+             <option value="5">
+              &lt;5 min.
+             </option>
+             <option value="10">
+              &lt;10 min.
+             </option>
+             <option value="30">
+              &lt;30 min.
+             </option>
+             <option value="60">
+              &lt;1 Hr.
+             </option>
+             <option value="120">
+              &lt;2 Hr.
+             </option>
+            </select>
+            <script charset="utf-8" type="text/javascript">
+             selectOption(document.webOffersQuickFilterForm.minutesRemaining, -1);
+            </script>
+           </td>
+           <td class="listdata" nowrap="">
+            <input id="origin" name="origin" size="9" value="">
+             <a href="#" onclick="openPopup(findPosX(document.webOffersQuickFilterForm.origin),findPosY(document.webOffersQuickFilterForm.origin), 300,250,
+		'/ofr/lookup/jsp/idLookup.jsp?returnId=origin&amp;lookupType=Region'
+		,'Region Lookup')">
+              <img alt="Click here to select the region" border="0" src="/lcom/common/image/find.gif">
+              </img>
+             </a>
+            </input>
+           </td>
+           <td class="listdata" nowrap="">
+            <input id="destination" name="destination" size="9" value="">
+             <a href="#" onclick="openPopup(findPosX(document.webOffersQuickFilterForm.destination),findPosY(document.webOffersQuickFilterForm.destination), 300,250,
+		'/ofr/lookup/jsp/idLookup.jsp?returnId=destination&amp;lookupType=Region'
+		,'Region Lookup')">
+              <img alt="Click here to select the region" border="0" src="/lcom/common/image/find.gif">
+              </img>
+             </a>
+            </input>
+           </td>
+           <td colspan="3">
+           </td>
+          </tr>
+         </table>
+        </div>
+       </td>
+      </tr>
+     </table>
+    </input>
+   </input>
+  </input>
+ </body>
+</html>
+<form action="/ofr/ra/jsp/ProcessOfferResponse.jsp" method="post" name="webOffersForm">
+ <input name="shipmentIdList" type="hidden">
+  <input name="responseType" type="hidden">
+  </input>
+ </input>
+</form>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48144576">
+    CS04112534
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Canceled
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="392794_03,OSI INDUSTRIES LLC">
+    392794_03,OSI IND
+    <img alt="392794_03,OSI INDUSTRIES LLC" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="CHICAGO, IL 60609 US">
+     CHICAGO, IL 60609
+     <img alt="CHICAGO, IL 60609 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="184,BSC Baugh South Cooperative, Inc.">
+    184,BSC Baugh Sou
+    <img alt="184,BSC Baugh South Cooperative, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Alachua, FL 32615 US">
+     Alachua, FL 32615
+     <img alt="Alachua, FL 32615 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  0
+ </td>
+ <td class="listdata">
+  6/12/15 08:00 CDT
+  <br>
+   6/15/15 00:16 EDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48154960">
+    CS04116692
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="495763_01,CAMBA ENTERPRISES INC">
+    495763_01,CAMBA E
+    <img alt="495763_01,CAMBA ENTERPRISES INC" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    MIAMI, FL 33166 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="076,BNEC Sysco Metro New York, LLC">
+    076,BNEC Sysco Me
+    <img alt="076,BNEC Sysco Metro New York, LLC" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Jersey City, NJ 07305 US">
+     Jersey City, NJ 0
+     <img alt="Jersey City, NJ 07305 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  0
+ </td>
+ <td class="listdata">
+  6/15/15 08:00 EDT
+  <br>
+   6/19/15 06:45 EDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48158773">
+    CS04118256
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="1091_46,DURO BAG MFG CO">
+    1091_46,DURO BAG
+    <img alt="1091_46,DURO BAG MFG CO" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="TOLLESON, AZ 85353 US">
+     TOLLESON, AZ 8535
+     <img alt="TOLLESON, AZ 85353 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="004,BWC Sysco Central California, Inc.">
+    004,BWC Sysco Cen
+    <img alt="004,BWC Sysco Central California, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Modesto, CA 95354 US">
+     Modesto, CA 95354
+     <img alt="Modesto, CA 95354 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  1
+ </td>
+ <td class="listdata">
+  6/12/15 08:00 MDT
+  <br>
+   6/15/15 06:15 PDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48161829">
+    CS04119413
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Canceled
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="293513_15,OLE MEXICAN FOODS INC">
+    293513_15,OLE MEX
+    <img alt="293513_15,OLE MEXICAN FOODS INC" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="NORCROSS, GA 30071 US">
+     NORCROSS, GA 3007
+     <img alt="NORCROSS, GA 30071 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="137,BNEC Sysco Columbia, LLC">
+    137,BNEC Sysco Co
+    <img alt="137,BNEC Sysco Columbia, LLC" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Columbia, SC 29209 US">
+     Columbia, SC 2920
+     <img alt="Columbia, SC 29209 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  2
+ </td>
+ <td class="listdata">
+  6/10/15 10:00 EDT
+  <br>
+   6/11/15 06:15 EDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48166235">
+    CS04121036
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="15777_01,T&amp;amp;J SAUSAGE KITCHEN INC">
+    15777_01,T&amp;amp;J
+    <img alt="15777_01,T&amp;amp;J SAUSAGE KITCHEN INC" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="ANAHEIM, CA 92806 US">
+     ANAHEIM, CA 92806
+     <img alt="ANAHEIM, CA 92806 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="055,BWC SYSCO SEATTLE, INC.">
+    055,BWC SYSCO SEA
+    <img alt="055,BWC SYSCO SEATTLE, INC." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    KENT, WA 98032 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  3
+ </td>
+ <td class="listdata">
+  6/11/15 08:00 PDT
+  <br>
+   6/15/15 05:15 PDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48166374">
+    CS04121167
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="1482_10,GONNELLA FROZEN PROD 2">
+    1482_10,GONNELLA
+    <img alt="1482_10,GONNELLA FROZEN PROD 2" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="SCHAUMBURG, IL 60173 US">
+     SCHAUMBURG, IL 60
+     <img alt="SCHAUMBURG, IL 60173 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="047,BNCC Sysco Minnesota, Inc.">
+    047,BNCC Sysco Mi
+    <img alt="047,BNCC Sysco Minnesota, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Saint Paul, MN 55112 US">
+     Saint Paul, MN 55
+     <img alt="Saint Paul, MN 55112 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  1
+ </td>
+ <td class="listdata">
+  6/12/15 08:00 CDT
+  <br>
+   6/15/15 06:15 CDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48168934">
+    CS04122066
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Canceled
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="2616_31,VIE DE FRANCE">
+    2616_31,VIE DE FR
+    <img alt="2616_31,VIE DE FRANCE" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="ONTARIO, CA 91761 US">
+     ONTARIO, CA 91761
+     <img alt="ONTARIO, CA 91761 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="031,BWC Sysco Sacramento, Inc.">
+    031,BWC Sysco Sac
+    <img alt="031,BWC Sysco Sacramento, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Pleasant Grove, CA 95668 US">
+     Pleasant Grove, C
+     <img alt="Pleasant Grove, CA 95668 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  3
+ </td>
+ <td class="listdata">
+  6/10/15 10:00 PDT
+  <br>
+   6/11/15 08:56 PDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48168935">
+    CS04122070
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="480671_05,STIR FOODS">
+    480671_05,STIR FO
+    <img alt="480671_05,STIR FOODS" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    VERNON, CA 90058 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="031,BWC Sysco Sacramento, Inc.">
+    031,BWC Sysco Sac
+    <img alt="031,BWC Sysco Sacramento, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Pleasant Grove, CA 95668 US">
+     Pleasant Grove, C
+     <img alt="Pleasant Grove, CA 95668 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  5
+ </td>
+ <td class="listdata">
+  6/10/15 10:00 PDT
+  <br>
+   6/11/15 05:15 PDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48169343">
+    CS04122218
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="2005_31,KING&amp;amp;PRINCE SEAFOOD CORP">
+    2005_31,KING&amp;amp;
+    <img alt="2005_31,KING&amp;amp;PRINCE SEAFOOD CORP" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    VERNON, CA 90058 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="055,BWC SYSCO SEATTLE, INC.">
+    055,BWC SYSCO SEA
+    <img alt="055,BWC SYSCO SEATTLE, INC." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    KENT, WA 98032 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  8
+ </td>
+ <td class="listdata">
+  6/11/15 08:00 PDT
+  <br>
+   6/15/15 05:15 PDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48169473">
+    CS04122244
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   33561_32,PACTIV
+   <br>
+    <div style="cursor:default" title="BAKERSFIELD, CA 93308 US">
+     BAKERSFIELD, CA 9
+     <img alt="BAKERSFIELD, CA 93308 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="320,BWC SYSCO RIVERSIDE">
+    320,BWC SYSCO RIV
+    <img alt="320,BWC SYSCO RIVERSIDE" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="RIVERSIDE, CA 92518 US">
+     RIVERSIDE, CA 925
+     <img alt="RIVERSIDE, CA 92518 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  0
+ </td>
+ <td class="listdata">
+  6/10/15 10:00 PDT
+  <br>
+   6/11/15 06:15 PDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48170763">
+    CS04122741
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Canceled
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="2878_01,PIANTEDOSI BAKERY CO">
+    2878_01,PIANTEDOS
+    <img alt="2878_01,PIANTEDOSI BAKERY CO" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    MALDEN, MA 02148 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="008,BNEC Sysco Northern New England, Inc.">
+    008,BNEC Sysco No
+    <img alt="008,BNEC Sysco Northern New England, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Westbrook, ME 04092 US">
+     Westbrook, ME 040
+     <img alt="Westbrook, ME 04092 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  0
+ </td>
+ <td class="listdata">
+  6/15/15 08:00 EDT
+  <br>
+   6/16/15 06:15 EDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48170913">
+    CS04122772
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="361594_02,DEL REAL, LLC">
+    361594_02,DEL REA
+    <img alt="361594_02,DEL REAL, LLC" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="MIRA LOMA, CA 91752 US">
+     MIRA LOMA, CA 917
+     <img alt="MIRA LOMA, CA 91752 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="055,BWC SYSCO SEATTLE, INC.">
+    055,BWC SYSCO SEA
+    <img alt="055,BWC SYSCO SEATTLE, INC." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    KENT, WA 98032 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  6
+ </td>
+ <td class="listdata">
+  6/11/15 00:01 PDT
+  <br>
+   6/15/15 21:58 PDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48170897">
+    CS04122781
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="273715_91,UBF FOODSOLUTIONS">
+    273715_91,UBF FOO
+    <img alt="273715_91,UBF FOODSOLUTIONS" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    RIALTO, CA 92376 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="055,BWC SYSCO SEATTLE, INC.">
+    055,BWC SYSCO SEA
+    <img alt="055,BWC SYSCO SEATTLE, INC." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    KENT, WA 98032 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  3
+ </td>
+ <td class="listdata">
+  6/11/15 00:01 PDT
+  <br>
+   6/15/15 21:59 PDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48170937">
+    CS04122786
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="811_09,WNA CITY OF INDUSTRY">
+    811_09,WNA CITY O
+    <img alt="811_09,WNA CITY OF INDUSTRY" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="CITY OF INDUSTRY, CA 91748 US">
+     CITY OF INDUSTRY,
+     <img alt="CITY OF INDUSTRY, CA 91748 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="031,BWC Sysco Sacramento, Inc.">
+    031,BWC Sysco Sac
+    <img alt="031,BWC Sysco Sacramento, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Pleasant Grove, CA 95668 US">
+     Pleasant Grove, C
+     <img alt="Pleasant Grove, CA 95668 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  5
+ </td>
+ <td class="listdata">
+  6/11/15 22:01 PDT
+  <br>
+   6/12/15 22:19 PDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48171356">
+    CS04122942
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="550987_15,STRATAS FOODS LLC 1">
+    550987_15,STRATAS
+    <img alt="550987_15,STRATAS FOODS LLC 1" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="VALDOSTA, GA 31601 US">
+     VALDOSTA, GA 3160
+     <img alt="VALDOSTA, GA 31601 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="067,BSC Sysco Houston, Inc.">
+    067,BSC Sysco Hou
+    <img alt="067,BSC Sysco Houston, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Houston, TX 77038 US">
+     Houston, TX 77038
+     <img alt="Houston, TX 77038 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  0
+ </td>
+ <td class="listdata">
+  6/12/15 08:00 EDT
+  <br>
+   6/15/15 06:15 CDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48171693">
+    CS04123132
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="1410_92,GENERAL MILLS 1">
+    1410_92,GENERAL M
+    <img alt="1410_92,GENERAL MILLS 1" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="GREAT FALLS, MT 59401 US">
+     GREAT FALLS, MT 5
+     <img alt="GREAT FALLS, MT 59401 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="055,BWC SYSCO SEATTLE, INC.">
+    055,BWC SYSCO SEA
+    <img alt="055,BWC SYSCO SEATTLE, INC." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    KENT, WA 98032 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  0
+ </td>
+ <td class="listdata">
+  6/16/15 08:00 MDT
+  <br>
+   6/19/15 05:15 PDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48171856">
+    CS04123169
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Not Awarded
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="3090_47,RICH PRODUCTS CORP">
+    3090_47,RICH PROD
+    <img alt="3090_47,RICH PRODUCTS CORP" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="MURFREESBORO, TN 37127 US">
+     MURFREESBORO, TN
+     <img alt="MURFREESBORO, TN 37127 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="137,BNEC Sysco Columbia, LLC">
+    137,BNEC Sysco Co
+    <img alt="137,BNEC Sysco Columbia, LLC" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="Columbia, SC 29209 US">
+     Columbia, SC 2920
+     <img alt="Columbia, SC 29209 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  0
+ </td>
+ <td class="listdata">
+  6/11/15 08:00 CDT
+  <br>
+   6/12/15 22:17 EDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48173336">
+    CS04123687
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="26301_04,PACIFIC FOODS OF OREGON">
+    26301_04,PACIFIC
+    <img alt="26301_04,PACIFIC FOODS OF OREGON" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="WILSONVILLE, OR 97070 US">
+     WILSONVILLE, OR 9
+     <img alt="WILSONVILLE, OR 97070 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="045,BWC Sysco Los Angeles, Inc.">
+    045,BWC Sysco Los
+    <img alt="045,BWC Sysco Los Angeles, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    Walnut, CA 91789 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  3
+ </td>
+ <td class="listdata">
+  6/12/15 08:00 PDT
+  <br>
+   6/15/15 05:15 PDT
+  </br>
+ </td>
+</tr>
+<tr class="taltrow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48175324">
+    CS04124628
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Canceled
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="1551_02,GREGORY PACKAGING">
+    1551_02,GREGORY P
+    <img alt="1551_02,GREGORY PACKAGING" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    <div style="cursor:default" title="PHOENIX, AZ 85043 US">
+     PHOENIX, AZ 85043
+     <img alt="PHOENIX, AZ 85043 US" border="0" src="/lcom/common/image/ellipses.gif"/>
+    </div>
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="101,BWC Sysco Ventura, Inc.">
+    101,BWC Sysco Ven
+    <img alt="101,BWC Sysco Ventura, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    Oxnard, CA 93030 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  1
+ </td>
+ <td class="listdata">
+  6/11/15 07:00 MDT
+  <br>
+   6/12/15 05:45 PDT
+  </br>
+ </td>
+</tr>
+<tr class="trow">
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+ </td>
+ <td class="listdata">
+  Y
+ </td>
+ <td class="listdata">
+  <div style="cursor:default" title="BAUGH SUPPLY CHAIN, Inc. US">
+   BAUGH SUPPLY CHAIN
+   <img alt="BAUGH SUPPLY CHAIN, Inc. US" border="0" src="/lcom/common/image/ellipses.gif"/>
+  </div>
+  <br>
+   <a class="listdatalink" href="/ofr/ra/jsp/ShipmentDetails.jsp?previousPage=webOffers&amp;shipmentId=48175325">
+    CS04124634
+   </a>
+  </br>
+ </td>
+ <td class="listdata">
+  Canceled
+  <br>
+   <span style="FONT-WEIGHT:normal">
+    No Response
+   </span>
+  </br>
+ </td>
+ <td class="listdata">
+  Closed
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="3390_15,SIGNATURE BREADS">
+    3390_15,SIGNATURE
+    <img alt="3390_15,SIGNATURE BREADS" border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    TEMPE, AZ 85282 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  <br>
+   <div style="cursor:default" title="101,BWC Sysco Ventura, Inc.">
+    101,BWC Sysco Ven
+    <img alt="101,BWC Sysco Ventura, Inc." border="0" src="/lcom/common/image/ellipses.gif"/>
+   </div>
+   <br>
+    Oxnard, CA 93030 US
+   </br>
+  </br>
+ </td>
+ <td class="listdata">
+  0
+ </td>
+ <td class="listdata">
+  6/11/15 08:00 MDT
+  <br>
+   6/12/15 05:45 PDT
+  </br>
+ </td>
+</tr>
+<br>
+ <table border="0" cellpadding="3" cellspacing="0" width="100%">
+  <tr>
+   <td>
+    <script charset="utf-8" type="text/javascript">
+     document.webOffersQuickFilterForm.checkAll.disabled=true;
+    </script>
+   </td>
+  </tr>
+  <tr>
+   <td align="center">
+    <!-- %@taglib uri="lcom/a4j.tld" prefix="a4j"% -->
+    <input id="hid_lastPage" name="hid_lastPage" type="hidden" value="2"/>
+    <script type="text/javascript">
+     var pageURL = '/ofr/ra/jsp/WebOffers.jsp'
+function isFloat (s) {
+	var x=Math.round(s);
+	if(x == s)return false;
+	else return true;
+	}
+function goToPage(page,event)
+{	
+	var formObj = eval('document.'+'webOffersQuickFilterForm');
+	var lPage;
+	if(formObj != null && formObj.hid_lastPage != undefined)
+	{
+		 lPage = formObj.hid_lastPage.value;
+	}
+	else
+	{
+		 lPage = document.getElementById("hid_lastPage").value;
+	}
+/*
+    
+*/
+
+
+    if( page == -1 )
+	{
+		if(event.keyCode == 13)
+		{
+	   var recordPerPage = 20
+			var totalNumberOfRecords = 33
+			var increment = 0;
+			//Item number or the record number 
+			var itemNumber = 0;
+			if(navigator.appName=='Netscape')
+			{
+				itemNumber = Number(event.target.value);
+				//convert to page number
+				increment = ( itemNumber%recordPerPage == 0)? 0 : 1;
+				page = Math.floor(itemNumber/recordPerPage) + increment;
+			}
+			else
+			{
+				itemNumber = Number(event.srcElement.value);	
+				//convert to page number
+				increment = ( itemNumber%recordPerPage == 0)? 0 : 1;
+				page = Math.floor(itemNumber/recordPerPage) + increment;
+			}
+			event.cancelBubble = true;
+			event.returnValue = false;
+			//HFI convert page to record number, the fifth check make sure that the item number user gives to jump to a record is not more than the total records
+			//if( ( page < 1 ) || ( page > lPage ) || isNaN( page ) || isFloat(page) || (itemNumber > totalNumberOfRecords) || (itemNumber < 0))
+			if( ( page < 1 ) || isNaN( page ) || isFloat(page) || (itemNumber > totalNumberOfRecords) || (itemNumber < 0))
+			{
+				alert( "Invalid record number" );
+				return false;
+			}
+			else
+			{
+				page = page - 1 ;
+			}
+		}
+		else
+		{
+			return false;
+		}
+
+	}
+	
+	//var pageURL = "";
+	
+		document.getElementsByName('webOffersQuickFilterForm')[0].page.value=page;	
+	
+	document.getElementsByName('webOffersQuickFilterForm')[0].method='post';
+	// JV: TT 27408 Adding this variable as all the parametrs after "&" will be truncated in websphere
+	// but it is a must for AddToOrderPopup.jsp
+
+		
+	document.getElementsByName('webOffersQuickFilterForm')[0].action='/ofr/ra/jsp/WebOffers.jsp?windowId=screen-170861139';
+	//pageURL = '/ofr/ra/jsp/WebOffers.jsp';
+	
+	/*if(pageURL.indexOf("?")!=-1)
+		pageURL = pageURL + '&page='+page;
+	else
+		pageURL = pageURL + '?page='+page;*/
+	document.getElementsByName('webOffersQuickFilterForm')[0].submit();
+	//document.location.href=pageURL;
+	
+}
+function fnPageOver( pageButton )
+{
+	pageButton.className='PageNavOver';
+}
+function fnPageOut( pageButton )
+{
+	pageButton.className='PageNav';
+	//pageButton.blur();
+}
+function fnPageDown( pageButton )
+{
+	pageButton.className='PageNavDown';
+}
+    </script>
+    <script type="text/javascript">
+     if(document.getElementById("pageSpace") != undefined && document.getElementById("pageSpace") != null)
+	{
+		document.getElementById( "pageSpace" ).innerHTML = "<div class=\'jlistctls\' id=\'jlistctls1\'><table cellspacing=\'0\' width=\'100%\'><tr><td><table class=\'listds\' cellspacing=\'0\'><tr><td><button class=\'jlistnav\'  type=\'button\'disabled=\'true\' title=\'First\' ><img src=\'/lps/resources/table/icons/arrow_far_left_disabled.gif\' alt=\'First\'></button><button class=\'jlistnav\'  type=\'button\' disabled=\'true\'  title=\'Previous\' ><img src=\'/lcom/common/image/goprevd.gif\' alt=\'Previous\'></button><button class=\'jlistnav\' type=\'button\'  title=\'Next\' onclick=\'javascript:goToPage(1,event);\' ><img src=\'/lcom/common/image/gonext.gif\' alt=\'Next\'></button><button class=\'jlistnav\'  type=\'button\'  title=\'Last\' onclick=\'javascript:goToPage(1,event);\' ><img src=\'/lps/resources/table/icons/arrow_last.gif\' alt=\'Last\'></button></td><td>Go to: </td><td><input type=\'text\' value=\'1\'   size=\'1\' maxlength=\'6\' onkeypress=\'javascript:goToPage(-1,event);\' /></td><td class=\'listrslt\'><span class=\'nw\'>1&nbsp;-&nbsp;20&nbsp;of &nbsp;33&nbsp;at &nbsp;05:38 PM&nbsp;</span> <span>(<span id=\'numberSelected\'>0</span>&nbsp;selected)</span></td></tr></table></td></tr></table>" ;
+	}
+    </script>
+   </td>
+  </tr>
+ </table>
+ <script charset="utf-8" type="text/javascript">
+  document.webOffersQuickFilterForm.checkAll.disabled=true;
+ </script>
+</br>
+<script charset="utf-8" type="text/javascript">
+ if (! isNetscape())
+{
+	document.webOffersQuickFilterForm.origin.size=16;
+	document.webOffersQuickFilterForm.destination.size=16;
+}
+</script>
+<input name="UsrZnOfset" type="hidden" value="-21600000"/>
+<!-- main con -->
+<script type="text/javascript">
+ function calendarSetUp(name,timeval) {
+		calendarSetUpLocale(name,timeval,"%m/%d/%y %H:%M");
+}
+
+
+function calendarSetUpWithRefresh(name,timeval,form) {
+	calendarSetUpWithRefreshLocale(name,timeval,form,"%m/%d/%y %H:%M")
+}
+
+function calendarSetUpMultiple(name,timeval,row) {
+	calendarSetUpMultipleLocale(name,timeval,row,"%m/%d/%y %H:%M")
+}
+
+function calendarSetUpFullYear(name,timeval) {
+		calendarSetUpLocale(name,timeval,"%m/%d/%Y %H:%M");
+}
+</script>
+<script>
+ // schedule the onload function that will be called after the document is loaded
+	if (typeof(setBodyOnLoad) == "function") 
+		window.onload=setBodyOnLoad; //Implementation is in miscellaneous.js
+</script>
+<script charset="utf-8" src="/lps/resources/calendar/scripts/calendar.js" type="text/javascript">
+</script>
+<!-- The below line is for globalizing calendar display. Above includes is because it gives js error when there are no calendar related files included. -->
+<script charset="utf-8" src="/lps/resources/calendar/lang/calendar-en.js" type="text/javascript">
+</script>
